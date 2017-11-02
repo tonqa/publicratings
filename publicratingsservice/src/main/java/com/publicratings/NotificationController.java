@@ -49,14 +49,24 @@ public class NotificationController {
 	        PersistentEntityResourceAssembler assembler) {
 		Click click = clickResource.getContent();
 		clickRepository.save(click);
+		
 		Place place = click.getPlace();
 
-		if (place.getIsFavorite() == 1) {
-			if (click.getType() == 0)
-				notificationService.sendNotification(staticNotifcationMail, "[PublicRatings] Favorit negativ bewertet", "Dein Favorit " + place.getName() + " hat eine schlechte Bewertung soeben erhalten.");
-			if (click.getType() == 1)
-				notificationService.sendNotification(staticNotifcationMail, "[PublicRatings] Favorit positiv bewertet", "Dein Favorit " + place.getName() + " hat eine gute Bewertung soeben erhalten.");
+		if (click.getType() == 0) {
+			place.increaseClicksNeg();
+		} else {
+			place.increaseClicksPos();
 		}
+		
+		if (place.getIsFavorite() == 1) {
+			if (click.getType() == 0) {
+				notificationService.sendNotification(staticNotifcationMail, "[PublicRatings] Favorit negativ bewertet", "Dein Favorit " + place.getName() + " hat eine schlechte Bewertung soeben erhalten.");
+			} else if (click.getType() == 1) {
+				notificationService.sendNotification(staticNotifcationMail, "[PublicRatings] Favorit positiv bewertet", "Dein Favorit " + place.getName() + " hat eine gute Bewertung soeben erhalten.");
+			}
+		}
+		
+		placeRepository.save(place);
 
 	    HttpHeaders httpHeaders = new HttpHeaders();
 	    return new ResponseEntity<>("{}", httpHeaders, HttpStatus.CREATED);

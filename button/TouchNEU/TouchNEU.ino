@@ -17,13 +17,13 @@
 // GLOBAL VARIABLES
 
 // Zugangsdaten für WLAN
-const char* ssid = "EasyBox-0D0D00";
-const char* password = "8rMHESyWS";
+const char* ssid = "Private";
+const char* password = "capgemini";
 
 WiFiServer server(80);
 WiFiClient client;
 
-String serverpublic = "10.7.0.15/api";
+String serverpublic = "172.20.10.9/api";
 
 const int ledPin = BUILTIN_LED;
 const int switchPin1 = 5;
@@ -110,7 +110,7 @@ void postData(int val) {
         address += "/clicks";
         http.begin(address); //HTTP
 
-        String body = "{\"place\": \"/place/7\",\"type\": \"";
+        String body = "{\"place\": \"/places/1\",\"type\": \"";
         String bodys = body + val + "\",\"timestamp\":\"2016-12-05 15:23:10\"}";
 
         USE_SERIAL.print("[HTTP] POST...\n");

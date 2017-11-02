@@ -79,6 +79,16 @@ public class Place {
     public Integer getClicksPos() {
         return clicksPos;
     }
+    
+    public void increaseClicksPos() {
+    	clicksPos += 1;
+    	clicksTotal += 1;
+    }
+    
+    public void increaseClicksNeg() {
+    	clicksNeg += 1;
+    	clicksTotal += 1;
+    }
 
     public Integer getClicksNeg() {
         return clicksNeg;
