@@ -1,0 +1,200 @@
+body {
+  padding-top: 50px;
+}
+
+h1{
+	margin:5rem 0;
+	color:#45859b;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar {
+	background: #66c6e7;
+	border-bottom: #45859b;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #45859b;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #45859b;
+}
+
+.img-example {
+	background: #eee;
+	width: 100%;
+	height: 300px;
+}
+
+.map-example {
+	background: url('/images/stadtpark_maps.PNG');
+	width: 100%;
+	height: 300px;
+}
+
+.maps-example {
+	background: url('/images/parks_maps.PNG');
+	width: 100%;
+	height: 600px;
+}
+
+#toggle-view ul li a {
+	font-size: 2em;
+	color: #eee;
+}
+
+#toggle-view ul li.active a, #toggle-view ul li a:hover {
+	color: #333;
+}
+
+#alerts {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px #eee solid;
+}
+
+#alerts li {
+	padding: 1%;
+	margin: 0;
+	border-top: 1px #eee solid;
+}
+
+.infoContent h2{
+	font-size:20px;
+	font-weight:normal;
+	margin-top:10px;
+}
+
+.icons{
+	padding-top:5rem;
+}
+
+.icons a, .icons a:hover{
+	font-size:26px;
+	color:#333;
+	text-decoration:none;
+	margin-left:10px;
+}
+
+.place-image{
+	width:100%;
+	height:400px;
+	background-size:cover;
+}
+
+a.place-image{
+	display:block;
+	height:300px;
+	opacity:0.9;
+}
+a.place-image:hover{
+	opacity:1;
+}
+
+.infoContent{
+	max-width:320px !important;
+}
+
+.map-image{
+	max-width:180px !important;
+}
+
+.list-entry{
+	position:relative;
+	margin-bottom:30px;
+	box-shadow:0px 7px 14px rgba(205,205,205,1);
+}
+
+.list-entry h2{
+	color:#45859b;
+	margin:0;
+	font-size:20px;
+	line-height:62px;
+	padding:0 15px;
+}
+
+.list-entry h2 a{
+	color:#45859b;
+}
+
+.list-entry h2 i{
+	font-size: 40px;
+    line-height: 62px;
+}
+
+.list-entry .info{
+	text-align:center;
+	color:#187a9a;
+	padding:6px 0;
+	background-color:#66c6e7;
+}
+
+.list-entry .info i{
+	font-size:15px;
+}
+
+i.fa-smile-o{color:#59b55b}
+i.fa-frown-o{color:#e85754}
+
+.list-entry .fav{
+	position:absolute;
+	top:0;
+	left:15px;
+	color:#66c6e7;
+	font-size:25px;
+	line-height:1em;
+	padding:1rem;
+}
+
+.list-entry .fav:hover span:before{
+	content:"\e005";
+}
+
+.detail-heading, .detail-rating{
+	float:left;
+	margin:5rem 0;
+	line-height:40px;
+}
+
+.detail-heading{
+	margin-right:1rem;
+}
+
+.detail-rating, .detail-rating{
+	color:#66c6e7;
+}
+
+.detail-rating, .detail-rating .glyphicon{
+	font-size:25px;
+	line-height:40px;
+}
+
+.detail-detail{
+	padding:0 15px 5rem 15px;
+}
+
+.detail-info{
+	padding:3rem 0;
+	color:#45859b;
+	font-size:25px;
+}
+
+.make-favorite{
+	position:absolute;
+	top:5px;
+	left:10px;
+	font-size:25px;
+	color:#66c6e7;
+	z-index:1;
+}

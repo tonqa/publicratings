@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="parts :: head"></div>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="list.html"><span
+							class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+					<li><a href="alerts.html"><span
+							class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="new.html"><span
+							class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 th:text="${place.name}+' bearbeiten'"></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 main">
+				<form action="#" th:action="@{/edit(id=${place.id})}" th:object="${place}"  method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" th:field="*{name}" class="form-control"	placeholder="Name" />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" th:field="*{picture}" class="form-control" placeholder="Bild URL" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<input type="text" th:field="*{latitude}" class="form-control" placeholder="Breitengrad" />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<input type="text" th:field="*{longitude}" class="form-control" placeholder="Längengrad" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-left">
+							<div class="form-group">
+								<textarea class="form-control" th:field="*{detail}" rows="3" placeholder="Text"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-right">
+							<div class="form-group">
+								<input class="btn btn-default" type="submit" value="Speichern" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<hr />
+
+		<footer>
+			<p>© 2016 Company, Inc.</p>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<div th:replace="parts :: head"></div>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="list.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></a></li>
+            <li><a href="alerts.html"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></a></li>
+            <li class="active"><a href="fav.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="new.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6>Favoriten</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <div class="col-md-12">
+            <h4>Ansicht</h4>
+            <div id="toggle-view" class="row">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="list.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></a></li>
+                <li><a href="map.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+              </ul>
+            </div>
+            <h4>Sortierung</h4>
+            <select class="form-control">
+              <option>Keine</option>
+              <option>Beste Bewertung</option>
+              <option>Meisten Bewertungen</option>
+            </select>
+            <h4>Filter</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" checked="checked" value=""> Nur Favoriten
+              </label>
+            </div>
+            <h5>Kategorie</h5>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""> Parks
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""> Spielplätze
+              </label>
+            </div>
+            <h5>Stadtteile</h5>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""> Eimsbüttel
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""> Eppendorf
+              </label>
+            </div>
+          </div>
+          <button type="button" class="btn btn-default btn-lg">Filtern</button>
+        </div>
+        <div class="col-sm-9 main">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-10">
+                 <h2><a href="detail.html">Stadtpark</a></h2>
+                </div>
+                <div class="col-md-2 text-right">
+                  <h2>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 3.5 KM
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 17 / 31
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="img-example"></div>
+                  <p class="hide">2014 feierte der Hamburger Stadtpark seinen 100. Geburtstag! Seit der Eröffnung 1914 hat diese schon damals als großer Volkspark konzipierte Anlage eine wichtige Bedeutung als Naherholungsfläche innerhalb der Stadt. Die weitsichtige Planung schuf im ursprünglich noch unbebauten nördlichen Randgebiet diesen großen Park, dem die umliegende Bebauung folgte. Als grüne Lunge ist der Stadtpark bis heute wesentlicher Bestandteil der Hamburger Grünversorgung.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="row">
+                <div class="col-md-10">
+                 <h2>Stadtpark</h2>
+                </div>
+                <div class="col-md-2 text-right">
+                  <h2>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 3.5 KM
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 17 / 31
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="img-example"></div>
+                  <p class="hide">2014 feierte der Hamburger Stadtpark seinen 100. Geburtstag! Seit der Eröffnung 1914 hat diese schon damals als großer Volkspark konzipierte Anlage eine wichtige Bedeutung als Naherholungsfläche innerhalb der Stadt. Die weitsichtige Planung schuf im ursprünglich noch unbebauten nördlichen Randgebiet diesen großen Park, dem die umliegende Bebauung folgte. Als grüne Lunge ist der Stadtpark bis heute wesentlicher Bestandteil der Hamburger Grünversorgung.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-10">
+                 <h2>Stadtpark</h2>
+                </div>
+                <div class="col-md-2 text-right">
+                  <h2>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 3.5 KM
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 17 / 31
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="img-example"></div>
+                  <p class="hide">2014 feierte der Hamburger Stadtpark seinen 100. Geburtstag! Seit der Eröffnung 1914 hat diese schon damals als großer Volkspark konzipierte Anlage eine wichtige Bedeutung als Naherholungsfläche innerhalb der Stadt. Die weitsichtige Planung schuf im ursprünglich noch unbebauten nördlichen Randgebiet diesen großen Park, dem die umliegende Bebauung folgte. Als grüne Lunge ist der Stadtpark bis heute wesentlicher Bestandteil der Hamburger Grünversorgung.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="row">
+                <div class="col-md-10">
+                 <h2>Stadtpark</h2>
+                </div>
+                <div class="col-md-2 text-right">
+                  <h2>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 3.5 KM
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 17 / 31
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="img-example"></div>
+                  <p class="hide">2014 feierte der Hamburger Stadtpark seinen 100. Geburtstag! Seit der Eröffnung 1914 hat diese schon damals als großer Volkspark konzipierte Anlage eine wichtige Bedeutung als Naherholungsfläche innerhalb der Stadt. Die weitsichtige Planung schuf im ursprünglich noch unbebauten nördlichen Randgebiet diesen großen Park, dem die umliegende Bebauung folgte. Als grüne Lunge ist der Stadtpark bis heute wesentlicher Bestandteil der Hamburger Grünversorgung.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© 2016 Company, Inc.</p>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

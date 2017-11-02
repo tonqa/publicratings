@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <title>Public Ratings Application</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+	<link rel="stylesheet"
+	     th:href="@{/css/bootstrap.custom.css}"
+	     href="../../css/bootstrap.custom.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" th:fragment="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="list.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+            <li><a href="/alerts"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/new"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+
+      <footer th:fragment="footer">
+      <hr />
+        <p>© 2016 Company, Inc.</p>
+      </footer>
+
+    </body>
+
+    </html>
